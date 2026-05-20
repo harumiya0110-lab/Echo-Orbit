@@ -1,0 +1,73 @@
+:root {
+  --bg: #020202;
+  --line: rgba(255,255,255,0.15);
+  --pulse: rgba(0, 210, 255, 0.22);
+  --player: #7afcff;
+  --enemy: #ff5c5c;
+  --enemy-alert: #ffcc5c;
+  --text: #e7f7ff;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-shell {
+  display: grid;
+  grid-template-columns: 900px auto;
+  gap: 16px;
+  padding: 16px;
+}
+canvas {
+  border: 2px solid rgba(255,255,255,0.12);
+  background: #000;
+}
+.hud {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text);
+  max-width: 240px;
+}
+.hud div {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 10px;
+  border-radius: 10px;
+}
+#alert {
+  min-height: 42px;
+  font-weight: 700;
+}
+.network-panel {
+  display: flex;
+  gap: 8px;
+}
+.network-panel input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+}
+.network-panel button {
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 8px;
+  background: rgba(0, 210, 255, 0.12);
+  color: var(--text);
+  cursor: pointer;
+}
+.network-panel button:hover {
+  background: rgba(0, 210, 255, 0.18);
+}
