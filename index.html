@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Orbit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-shell">
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+    <div class="hud">
+      <div>WASD / ←↑↓→: 移動</div>
+      <div>Space: 音波発射</div>
+      <div class="network-panel">
+        <button id="connectBtn">マッチメイキング開始</button>
+      </div>
+      <div id="netStatus">未接続</div>
+      <div id="status">真っ暗だ。音波で周囲を探る。</div>
+      <div id="alert"></div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
